@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lexicographic Entry Schema",
+  "description": "Standardized schema for extracting indigenous language dictionary entries.",
+  "type": "object",
+  "properties": {
+    "entry": { "type": "string" },
+    "lemma": { "type": "string" },
+    "variants": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "part_of_speech": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "pronunciation": { "type": "string" },
+    "phonetic_transcription": { "type": "string" },
+    "syllabification": { "type": "string" },
+    "morphology": {
+      "type": "object",
+      "properties": {
+        "root": { "type": "string" },
+        "prefixes": { "type": "array", "items": { "type": "string" } },
+        "suffixes": { "type": "array", "items": { "type": "string" } },
+        "inflection": { "type": "string" },
+        "grammatical_features": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "etymology": { "type": "string" },
+    "semantic_domain": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "senses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sense_id": { "type": "string" },
+          "definition": { "type": "string" },
+          "gloss": { "type": "string" },
+          "translations": {
+            "type": "object",
+            "properties": {
+              "es": { "type": "array", "items": { "type": "string" } },
+              "en": { "type": "array", "items": { "type": "string" } },
+              "other": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_text": { "type": "string" },
+                "translation": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "usage_notes": { "type": "string" },
+          "cultural_notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cross_references": { "type": "array", "items": { "type": "string" } },
+    "synonyms": { "type": "array", "items": { "type": "string" } },
+    "antonyms": { "type": "array", "items": { "type": "string" } },
+    "related_terms": { "type": "array", "items": { "type": "string" } },
+    "dialectal_variants": { "type": "array", "items": { "type": "string" } },
+    "multimedia": {
+      "type": "object",
+      "properties": {
+        "audio": { "type": "array", "items": { "type": "string" } },
+        "image": { "type": "array", "items": { "type": "string" } },
+        "video": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "bibliographic_references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "editor_notes": { "type": "string" },
+    "source_metadata": {
+      "type": "object",
+      "properties": {
+        "page": { "type": "string" },
+        "section": { "type": "string" },
+        "dictionary": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
