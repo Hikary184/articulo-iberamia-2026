@@ -1,0 +1,26 @@
+# ==========================================
+# Hybrid AI for Lexicographic Structuring
+# Python 3.11 Environment Requirements
+# ==========================================
+
+# --- Core Deep Learning & LLM Framework ---
+torch>=2.1.0                # Backend framework para ejecución en GPU (CUDA)
+transformers>=4.38.0        # Ecosistema base de Hugging Face para cargar Qwen2.5
+accelerate>=0.27.0          # Esencial para el CPU-GPU offloading del modelo de 72B
+optimum>=1.17.0             # Requerido para optimización de inferencia y cuantización
+autoawq>=0.1.8              # Soporte específico para cargar modelos con cuantización AWQ a 4-bits
+auto-gptq>=0.7.1            # Soporte alternativo para cuantización GPTQ a 4-bits
+
+# --- Rule-Based Extraction & NLP ---
+regex>=2023.12.25           # Procesamiento avanzado de expresiones regulares para la fase determinista
+
+# --- Data Validation & Structuring ---
+jsonschema>=4.21.1          # Validación automatizada del JSON generado contra el target_schema.json
+pydantic>=2.6.3             # (Opcional) Parseo y validación estricta de estructuras de datos
+
+# --- Evaluation & Metrics ---
+scikit-learn>=1.4.1.post1   # Utilizado para el cálculo del Cohen's Kappa y métricas F1/Precision/Recall
+pandas>=2.2.1               # Manipulación de datos para tabular los resultados de evaluación
+
+# --- Utility ---
+tqdm>=4.66.2                # Barras de progreso para el procesamiento iterativo del corpus
