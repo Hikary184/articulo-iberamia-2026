@@ -1,6 +1,6 @@
 # articulo-iberamia-2026
 
-# Hybrid AI for Lexicographic Knowledge Extraction 📖🤖
+# Hybrid AI for Lexicographic Knowledge Extraction 
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -9,7 +9,7 @@ Official repository for the paper: **"Hybrid AI for Lexicographic Knowledge Extr
 
 This project implements a sequential hybrid artificial intelligence pipeline that combines deterministic rule-based parsing with Large Language Model (LLM) semantic completion to digitize printed Indigenous language dictionaries into machine-readable JSON formats.
 
-## 📌 Abstract / Overview
+## Abstract / Overview
 The digitization of historical and low-resource language dictionaries poses a complex information extraction challenge due to typographical heterogeneity, implicit semantic boundaries, and orthographic variations. This project introduces a hybrid pipeline that mitigates the brittleness of traditional parsers and the hallucination risks of standalone LLMs. 
 
 The pipeline uses **Qwen2.5-72B-Instruct** for constrained semantic completion over a pre-segmented structural backbone. The methodology was evaluated on a multilingual corpus of 16,300 entries from five Latin American Indigenous languages (Yalalag Zapotec, Sierra Popoluca, Iskonawa, Modern Nahuatl, and Yucatec Maya).
@@ -38,7 +38,7 @@ lexicographic-hybrid-ai/
 
 ```
 
-⚙️ Hardware & Software Requirements
+## Hardware & Software Requirements
 Due to the size of the chosen model (Qwen2.5-72B-Instruct), inference requires specific hardware capabilities and offloading strategies. The experiments in the paper were executed using the following setup:
 
 CPU: Intel Core i7-14700F
@@ -51,11 +51,11 @@ OS: Windows 11 Pro / Ubuntu 22.04 LTS
 
 Inference Precision: 4-bit quantization (GPTQ/AWQ)
 
-🚀 Installation
+## Installation
 Clone the repository:
 
 Bash
-git clone [https://github.com/your-username/lexicographic-hybrid-ai.git](https://github.com/your-username/lexicographic-hybrid-ai.git)
+git clone [https://github.com/Hikary184/articulo-iberamia-2026/](https://github.com/Hikary184/articulo-iberamia-2026/)
 cd lexicographic-hybrid-ai
 Create and activate a virtual environment (Python 3.11 recommended):
 
@@ -70,7 +70,8 @@ Install the remaining project dependencies:
 
 Bash
 pip install -r requirements.txt
-🧠 Usage
+
+## Usage
 1. Rule-Based Pre-segmentation
 Run the deterministic parser to identify explicit structural boundaries and generate intermediate partially-structured data:
 
