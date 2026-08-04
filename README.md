@@ -90,5 +90,5 @@ python src/evaluate_metrics.py --predictions data/processed/ --ground_truth data
 📊 Dataset Notice
 The data/gold_standard_350.json file contains a manually annotated subset of 350 entries used for the empirical evaluation (70 entries per dictionary). Due to copyright and intellectual property restrictions from the original publishers (INAH, INALI, etc.), the full corpora of 16,300 entries are not publicly distributed in this repository.
 
-🤝 Acknowledgments
+##🤝 Acknowledgments
 This study was supported by the Organización de Estados Iberoamericanos para la Educación, la Ciencia y la Cultura (OEI) under grant number OEI/FC25-26/006/MULT
