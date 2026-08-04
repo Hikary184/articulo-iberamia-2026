@@ -1,0 +1,11 @@
+Please process the following raw dictionary entry and map its components to the requested JSON schema. 
+
+INPUT DICTIONARY ENTRY:
+"""
+{{RAW_DICTIONARY_ENTRY}}
+"""
+
+CRITICAL REMINDERS:
+1. Extract ONLY what is explicitly present in the text above. Do not invent or hallucinate data.
+2. If a specific field is not present in the entry, leave it empty ("" or []).
+3. Return ONLY a single, valid JSON object. Do not include introductory text, explanations, or markdown code blocks (e.g., do not use ```json).
